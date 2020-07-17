@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2ad33c5-4976-48ff-9b5a-e5dfd5818880" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fake-api-jwt-json-server3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/GetPostFeature.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/GetPostFeature.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/BDDStyleMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/BDDStyleMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/BDDStyleMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/BDDStyleMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/GetPostSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/GetPostSteps.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,9 +37,12 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="instant.run" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\797505\IdeaProjects\api2\main" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\797505\IdeaProjects\api2" />
     </key>
@@ -55,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Verify one author of the post (1)">
+  <component name="RunManager" selected="Cucumber java.Scenario: Verify collection of authors in the post">
     <configuration name="Feature: GetPostFeature" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/GetPostFeature.feature" />
@@ -64,6 +68,25 @@
       <module name="api" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: GetPostFeature" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify collection of authors in the post" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/GetPostFeature.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="api2" />
+      <option name="NAME_FILTER" value="^Verify collection of authors in the post$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Verify collection of authors in the post$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify collection of authors in the post" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -114,6 +137,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Scenario: Verify collection of authors in the post" />
         <item itemvalue="Cucumber java.Scenario: Verify one author of the post (1)" />
         <item itemvalue="Cucumber java.Feature: GetPostFeature" />
         <item itemvalue="Cucumber java.Scenario: Verify one author of the post" />
