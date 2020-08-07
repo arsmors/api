@@ -1,16 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c2ad33c5-4976-48ff-9b5a-e5dfd5818880" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/TestInitialize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/GetPostFeature.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/GetPostFeature.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/BDDStyleMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/BDDStyleMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/BDDStyleMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/BDDStyleMethod.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/GetPostSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/GetPostSteps.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,18 +61,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1ecvP519sRhlkprN6mfIXsFbnDX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="instant.run" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Program Files (x86)/Java/jdk-11.0.2" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -47,19 +85,7 @@
       <recent name="C:\Users\797505\IdeaProjects\api2" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Verify collection of authors in the post">
+  <component name="RunManager" selected="Cucumber Java.Feature: GetPostFeature">
     <configuration name="Feature: GetPostFeature" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/GetPostFeature.feature" />
@@ -137,10 +163,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: Verify collection of authors in the post" />
-        <item itemvalue="Cucumber java.Scenario: Verify one author of the post (1)" />
-        <item itemvalue="Cucumber java.Feature: GetPostFeature" />
-        <item itemvalue="Cucumber java.Scenario: Verify one author of the post" />
+        <item itemvalue="Cucumber Java.Feature: GetPostFeature" />
+        <item itemvalue="Cucumber Java.Scenario: Verify one author of the post" />
       </list>
     </recent_temporary>
   </component>
@@ -162,12 +186,70 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1596804001425">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596804001425" />
+    <state width="1237" height="156" key="GridCell.Tab.0.bottom" timestamp="1596811452941">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="156" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596811452941" />
+    <state width="1237" height="156" key="GridCell.Tab.0.center" timestamp="1596811452941">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="156" key="GridCell.Tab.0.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596811452941" />
+    <state width="1237" height="156" key="GridCell.Tab.0.left" timestamp="1596811452941">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="156" key="GridCell.Tab.0.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596811452941" />
+    <state width="1237" height="156" key="GridCell.Tab.0.right" timestamp="1596811452941">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="156" key="GridCell.Tab.0.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596811452941" />
+    <state width="1237" height="195" key="GridCell.Tab.1.bottom" timestamp="1596810747890">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="195" key="GridCell.Tab.1.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596810747890" />
+    <state width="1237" height="195" key="GridCell.Tab.1.center" timestamp="1596810747890">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="195" key="GridCell.Tab.1.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596810747890" />
+    <state width="1237" height="195" key="GridCell.Tab.1.left" timestamp="1596810747890">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="195" key="GridCell.Tab.1.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596810747890" />
+    <state width="1237" height="195" key="GridCell.Tab.1.right" timestamp="1596810747890">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="195" key="GridCell.Tab.1.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596810747890" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1596811391168">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596811391168" />
+    <state x="371" y="91" key="extract.method.dialog" timestamp="1596810747789">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="91" key="extract.method.dialog/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596810747789" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CucumberJavaRunConfigurationType">
+        <watch expression="assertThat(response.getBody().jsonPath().get(&quot;author&quot;), hasItem(&quot;Alex&quot;));" />
+        <watch expression="esponse.getBody().jsonPath().get(&quot;author&quot;)" />
+        <watch expression="response.getBody().jsonPath().get(&quot;author&quot;)" />
+        <watch expression="response" language="JAVA" />
+        <watch expression="assertThat(response.getBody().jsonPath().get(&quot;author&quot;), hasItem(&quot;xxxx&quot;))" />
+        <watch expression="response.getBody().jsonPath().get(&quot;author&quot;)" />
+        <watch expression="hasItem(&quot;xxxx&quot;)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

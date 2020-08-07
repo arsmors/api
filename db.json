@@ -1,16 +1,36 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "Alex" },
-    { "id": 2, "title": "json-server", "author": "Tom" }
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "Alex"
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "author": "Tom"
+    },
+    {
+      "author": "ExecuteAutomation",
+      "id": "7",
+      "title": "Rest-assured course"
+    }
   ],
   "users": [
-    { "id": 1,
+    {
+      "id": 1,
       "email": "olivier@mail.com",
       "password": "bestPassw0rd"
     }
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }

@@ -6,30 +6,35 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.response.ResponseOptions;
+import org.hamcrest.Matcher;
+import org.junit.Assert;
+import utilities.RestAssuredExtension;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.HashMap;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
+import static org.hamcrest.CoreMatchers.hasItem;
 import static org.hamcrest.CoreMatchers.is;
 
 public class GetPostSteps {
+
+    private static ResponseOptions<Response> response;
+
     @Given("^I perform GET operation for \"([^\"]*)\"$")
     public void iPerformGETOperationFor(String url) throws Throwable {
-       given().contentType(ContentType.JSON);
-    }
-
-    @And("^I perform GET for the post number \"([^\"]*)\"$")
-    public void iPerformGETForThePostNumber(String postNumber) throws Throwable {
-        BDDStyleMethod.SimpleGETPost(postNumber);
+        response = RestAssuredExtension.GetOps(url);
     }
 
     @Then("^I should see the author name as \"([^\"]*)\"$")
-    public void iShouldSeeTheAuthorNameAs(String arg0) throws Throwable {
-
-
+    public void iShouldSeeTheAuthorNameAs(String authorName) throws Throwable {
+        assertThat(response.getBody().jsonPath().get("author"), hasItem(authorName));
     }
+
 
     @Then("^I should see the author names$")
     public void iShouldSeeTheAuthorNames() {
@@ -40,6 +45,11 @@ public class GetPostSteps {
     public void iShouldSeeVerifyGETParameter() {
         BDDStyleMethod.PerformPathParameter();
         BDDStyleMethod.PerformQueryParameter();
+    }
+
+    @Given("^I perform Post operation for \"([^\"]*)\"$")
+    public void iPerformPostOperationFor(String arg0) throws Throwable {
+        BDDStyleMethod.PerformPostWithBodyParameter();
     }
 
 //    @Given("^I perform authentication operation for \"([^\"]*)\" with body$")
