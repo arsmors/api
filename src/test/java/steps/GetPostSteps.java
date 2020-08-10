@@ -11,6 +11,8 @@ import io.restassured.response.ResponseOptions;
 import org.hamcrest.Matcher;
 import org.junit.Assert;
 import utilities.RestAssuredExtension;
+
+import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.HashMap;
@@ -18,8 +20,6 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
-import static org.hamcrest.CoreMatchers.hasItem;
-import static org.hamcrest.CoreMatchers.is;
 
 public class GetPostSteps {
 
@@ -50,6 +50,25 @@ public class GetPostSteps {
     @Given("^I perform Post operation for \"([^\"]*)\"$")
     public void iPerformPostOperationFor(String arg0) throws Throwable {
         BDDStyleMethod.PerformPostWithBodyParameter();
+    }
+
+    @Given("^I perform POST operation for \"([^\"]*)\" with body$")
+    public void iPerformPOSTOperationForWithBody(String url, DataTable table) throws Throwable {
+       var data = table.raw();
+
+       HashMap<String, String> body = new HashMap<>();
+       body.put("name", data.get(1).get(0));
+
+       HashMap<String, String> pathParam = new HashMap<>();
+       pathParam.put("profileNo", data.get(1).get(1));
+
+       response = RestAssuredExtension.PostOpsWithBodyAndPathParams(url, pathParam, body);
+
+    }
+
+    @Then("^I should see the body has name as \"([^\"]*)\"$")
+    public void iShouldSeeTheBodyHasNameAs(String name ) throws Throwable {
+        assertThat(response.getBody().jsonPath().get("name"), equalTo(name));
     }
 
 //    @Given("^I perform authentication operation for \"([^\"]*)\" with body$")

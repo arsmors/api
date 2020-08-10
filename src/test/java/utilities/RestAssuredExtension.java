@@ -6,6 +6,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;
 import io.restassured.specification.RequestSpecification;
+import org.junit.Before;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -41,15 +42,11 @@ public class RestAssuredExtension {
         return null;
     }
 
-    public ResponseOptions<Response> PostOpsWithBodyAndPathParams(
+    public static ResponseOptions<Response> PostOpsWithBodyAndPathParams(
             String url, Map<String, String> pathParams, Map<String, String> body) {
+
         Request.pathParams(pathParams);
         Request.body(body);
-        try {
-            return Request.post(new URI(url));
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-        return null;
+        return Request.post(url);
     }
 }
