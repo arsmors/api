@@ -9,14 +9,18 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;
 import org.hamcrest.Matcher;
+import org.hamcrest.core.IsNot;
 import org.junit.Assert;
 import utilities.RestAssuredExtension;
+
+import javax.xml.crypto.Data;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
@@ -69,6 +73,43 @@ public class GetPostSteps {
     @Then("^I should see the body has name as \"([^\"]*)\"$")
     public void iShouldSeeTheBodyHasNameAs(String name ) throws Throwable {
         assertThat(response.getBody().jsonPath().get("name"), equalTo(name));
+    }
+
+    @Given("^I ensure to Perform POST operation for \"([^\"]*)\" with body as$")
+    public void iEnsureToPerformPOSTOperationForWithBodyAs(String url, DataTable table) throws Throwable {
+       var data = table.raw();
+
+       Map<String, String> body = new HashMap<>();
+       body.put("id", data.get(1).get(0));
+       body.put("title", data.get(1).get(1));
+       body.put("author", data.get(1).get(2));
+
+       RestAssuredExtension.PostOpsWithBody(url, body);
+    }
+
+    @And("^I Perform DELETE operation for \"([^\"]*)\"$")
+    public void iPerformDELETEOperationFor(String url, DataTable table) throws Throwable {
+        var data = table.raw();
+
+        Map<String, String> pathParams = new HashMap<>();
+        pathParams.put("postid", data.get(1).get(0));
+
+        RestAssuredExtension.DeleteOpsWithPathParams(url, pathParams);
+    }
+
+    @And("^I perform GET operation with path parameter for \"([^\"]*)\"$")
+    public void iPerformGETOperationWithPathParameterFor(String url, DataTable table) throws Throwable {
+      var data = table.raw();
+
+      Map<String, String> pathParams = new HashMap<>();
+      pathParams.put("postid", data.get(1).get(0));
+
+      response = RestAssuredExtension.GetWithPathParams(url, pathParams);
+    }
+
+    @Then("^I should not see the body with title as \"([^\"]*)\"$")
+    public void iShouldNotSeeTheBodyWithTitleAs(String title) throws Throwable {
+       assertThat(response.getBody().jsonPath().get("title"), IsNot.not(title));
     }
 
 //    @Given("^I perform authentication operation for \"([^\"]*)\" with body$")
