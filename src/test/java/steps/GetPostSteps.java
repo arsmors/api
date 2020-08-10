@@ -11,6 +11,7 @@ import io.restassured.response.ResponseOptions;
 import org.hamcrest.Matcher;
 import org.hamcrest.core.IsNot;
 import org.junit.Assert;
+import pojo.Posts;
 import utilities.RestAssuredExtension;
 
 import javax.xml.crypto.Data;
@@ -42,7 +43,10 @@ public class GetPostSteps {
 
     @Then("^I should see the author name as \"([^\"]*)\"$")
     public void iShouldSeeTheAuthorNameAs(String authorName) throws Throwable {
-        assertThat(response.getBody().jsonPath().get("author"), hasItem(authorName));
+        var posts = response.getBody().as(Posts.class);
+        assertThat(posts.getAuthor(), equalTo(authorName));
+
+        //assertThat(response.getBody().jsonPath().get("author"), hasItem(authorName));
     }
 
 
