@@ -11,6 +11,8 @@ import io.restassured.response.ResponseOptions;
 import org.hamcrest.Matcher;
 import org.hamcrest.core.IsNot;
 import org.junit.Assert;
+import pojo.Address;
+import pojo.Location;
 import pojo.Posts;
 import utilities.RestAssuredExtension;
 
@@ -149,6 +151,33 @@ public class GetPostSteps {
         body.put("email", data.get(1).get(0));
         body.put("password", data.get(1).get(1));
         response = RestAssuredExtension.PostOpsWithBody(url, body);
+    }
+
+    @And("^I perform GET operation with path parameter for address \"([^\"]*)\"$")
+    public void iPerformGETOperationWithPathParameterForAddress(String url, DataTable table) throws Throwable {
+       var data = table.raw();
+       Map<String, String> queryParams = new HashMap<>();
+       queryParams.put("id", data.get(1).get(0));
+
+       response = RestAssuredExtension.GetWithQueryParamsWithToken(
+               url,
+               queryParams,
+               response.getBody().jsonPath().get("access_token"));
+
+    }
+
+    @Then("^I should see the street name as \"([^\"]*)\" for the \"([^\"]*)\" address$")
+    public void iShouldSeeTheStreetNameAsForTheAddress(String streetName, String type) throws Throwable {
+        var location = response.getBody().as(Location[].class);
+
+        Address address = location[0]
+                .getAddress()
+                .stream()
+                .filter(x -> x.getType().equalsIgnoreCase(type))
+                .findFirst()
+                .orElse(null);
+
+        assertThat(address.getStreet(), equalTo(streetName));
     }
 
 

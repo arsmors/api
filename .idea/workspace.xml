@@ -33,10 +33,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2ad33c5-4976-48ff-9b5a-e5dfd5818880" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pojo/Posts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/features/ComplexDataGET.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pojo/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pojo/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/Auth.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Auth.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/GetPostSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/GetPostSteps.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Substep Feature" />
         <option value="Class" />
+        <option value="Substep Feature" />
       </list>
     </option>
   </component>
@@ -79,7 +83,7 @@
       <recent name="C:\Users\797505\IdeaProjects\api2" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Auth">
+  <component name="RunManager" selected="Cucumber Java.Feature: ComplexDataGET">
     <configuration name="Feature: Auth" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/Auth.feature" />
@@ -88,6 +92,25 @@
       <module name="api" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: Auth" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: ComplexDataGET" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/ComplexDataGET.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="api" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: ComplexDataGET" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -158,33 +181,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify Post operation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/GetPostFeature.feature" />
-      <option name="GLUE" value="steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="api" />
-      <option name="NAME_FILTER" value="^Verify Post operation$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Verify Post operation$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify Post operation" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: ComplexDataGET" />
         <item itemvalue="Cucumber Java.Feature: Auth" />
         <item itemvalue="Cucumber Java.Scenario: A scenario" />
         <item itemvalue="Cucumber Java.Feature: DELETEPost" />
         <item itemvalue="Cucumber Java.Scenario: Verify DELETE operation after POST" />
-        <item itemvalue="Cucumber Java.Scenario: Verify Post operation" />
       </list>
     </recent_temporary>
   </component>
@@ -214,58 +217,58 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1597059966123">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1597067943625">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597059966123" />
-    <state x="396" y="44" key="#xdebugger.evaluate" timestamp="1597053456270">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597067943625" />
+    <state x="396" y="44" key="#xdebugger.evaluate" timestamp="1597069606934">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="396" y="44" key="#xdebugger.evaluate/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597053456270" />
+    <state x="396" y="44" key="#xdebugger.evaluate/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597069606934" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1596804001425">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596804001425" />
-    <state width="1237" height="151" key="GridCell.Tab.0.bottom" timestamp="1597059977566">
+    <state width="1237" height="195" key="GridCell.Tab.0.bottom" timestamp="1597069346338">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="151" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597059977566" />
-    <state width="1237" height="151" key="GridCell.Tab.0.center" timestamp="1597059977566">
+    <state width="1237" height="195" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597069346338" />
+    <state width="1237" height="195" key="GridCell.Tab.0.center" timestamp="1597069346338">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="151" key="GridCell.Tab.0.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597059977566" />
-    <state width="1237" height="151" key="GridCell.Tab.0.left" timestamp="1597059977566">
+    <state width="1237" height="195" key="GridCell.Tab.0.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597069346338" />
+    <state width="1237" height="195" key="GridCell.Tab.0.left" timestamp="1597069346338">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="151" key="GridCell.Tab.0.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597059977566" />
-    <state width="1237" height="151" key="GridCell.Tab.0.right" timestamp="1597059977566">
+    <state width="1237" height="195" key="GridCell.Tab.0.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597069346338" />
+    <state width="1237" height="195" key="GridCell.Tab.0.right" timestamp="1597069346338">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="151" key="GridCell.Tab.0.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597059977566" />
-    <state width="1237" height="195" key="GridCell.Tab.1.bottom" timestamp="1597053704033">
+    <state width="1237" height="195" key="GridCell.Tab.0.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597069346338" />
+    <state width="1237" height="195" key="GridCell.Tab.1.bottom" timestamp="1597069352146">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="195" key="GridCell.Tab.1.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597053704033" />
-    <state width="1237" height="195" key="GridCell.Tab.1.center" timestamp="1597053704033">
+    <state width="1237" height="195" key="GridCell.Tab.1.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597069352146" />
+    <state width="1237" height="195" key="GridCell.Tab.1.center" timestamp="1597069352145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="195" key="GridCell.Tab.1.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597053704033" />
-    <state width="1237" height="195" key="GridCell.Tab.1.left" timestamp="1597053704033">
+    <state width="1237" height="195" key="GridCell.Tab.1.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597069352145" />
+    <state width="1237" height="195" key="GridCell.Tab.1.left" timestamp="1597069352145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="195" key="GridCell.Tab.1.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597053704033" />
-    <state width="1237" height="195" key="GridCell.Tab.1.right" timestamp="1597053704033">
+    <state width="1237" height="195" key="GridCell.Tab.1.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597069352145" />
+    <state width="1237" height="195" key="GridCell.Tab.1.right" timestamp="1597069352146">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="195" key="GridCell.Tab.1.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597053704033" />
+    <state width="1237" height="195" key="GridCell.Tab.1.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597069352146" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1596811834225">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596811834225" />
-    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1597045278110">
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1597069548218">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597045278110" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597069548218" />
     <state x="371" y="91" key="extract.method.dialog" timestamp="1596810747789">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -284,7 +287,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>72</line>
+          <line>74</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -294,12 +297,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>84</line>
+          <line>86</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>111</line>
+          <line>113</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -309,17 +312,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>150</line>
+          <line>152</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>39</line>
+          <line>41</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>48</line>
+          <line>50</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -332,9 +335,24 @@
           <line>55</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
+          <line>170</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>120</line>
+          <line>122</line>
           <properties class="steps.GetPostSteps" method="iShouldNotSeeTheBodyWithTitleAs">
             <option name="EMULATED" value="true" />
           </properties>
@@ -342,5 +360,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CucumberJavaRunConfigurationType">
+        <watch expression="response.getBody().jsonPath()" />
+        <watch expression="response.getBody().jsonPath().get(&quot;primary address&quot;)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

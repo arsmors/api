@@ -48,6 +48,37 @@
       "postId": 1
     }
   ],
+  "location": [
+    {
+      "id": 1,
+      "city": "chennai",
+      "country": "india",
+      "address": [
+        {
+          "street": "1st street",
+          "flat_no": "44",
+          "pincode": "321421",
+          "type": "primary"
+        },
+        {
+          "street": "1st street",
+          "flat_no": "44",
+          "pincode": "321421",
+          "type": "secondary"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "city": "Auckland",
+      "country": "NZ",
+      "address": {
+        "street": "Auckland Central",
+        "flat_no": "140",
+        "pincode": "1231"
+      }
+    }
+  ],
   "profile": {
     "{\t\n\n\t\"author\": \"aaa\"\n}": "",
     "postId": "6"

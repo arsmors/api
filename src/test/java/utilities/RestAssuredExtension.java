@@ -82,4 +82,14 @@ public class RestAssuredExtension {
         }
         return null;
     }
+
+    public static ResponseOptions<Response> GetWithQueryParamsWithToken(
+            String url,
+            Map<String, String> queryParams,
+            String token) {
+
+        Request.header(new Header("Authorization", "Bearer " +token));
+        Request.queryParams(queryParams);
+        return Request.get(url);
+    }
 }
