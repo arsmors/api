@@ -29,9 +29,15 @@ public class GetPostSteps {
 
     private static ResponseOptions<Response> response;
 
+//    @Given("^I perform GET operation for \"([^\"]*)\"$")
+//    public void iPerformGETOperationFor(String url) throws Throwable {
+//        response = RestAssuredExtension.GetOps(url);
+//    }
+
     @Given("^I perform GET operation for \"([^\"]*)\"$")
     public void iPerformGETOperationFor(String url) throws Throwable {
-        response = RestAssuredExtension.GetOps(url);
+        response = RestAssuredExtension.GetOpsWithToken(url, response.getBody().jsonPath().get("access_token"));
+
     }
 
     @Then("^I should see the author name as \"([^\"]*)\"$")
@@ -129,6 +135,16 @@ public class GetPostSteps {
         pathParams.put("postid", data.get(1).get(0));
 
         RestAssuredExtension.PutOpsWithBodyAndPathParams(url, body, pathParams);
+    }
+
+    @Given("^I perform authentication operation for \"([^\"]*)\" with body$")
+    public void iPerformAuthenticationOperationForWithBody(String url, DataTable table) throws Throwable {
+        var data = table.raw();
+
+        HashMap<String, String> body = new HashMap<>();
+        body.put("email", data.get(1).get(0));
+        body.put("password", data.get(1).get(1));
+        response = RestAssuredExtension.PostOpsWithBody(url, body);
     }
 
 

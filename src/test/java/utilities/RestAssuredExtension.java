@@ -1,8 +1,10 @@
 package utilities;
 
+import gherkin.lexer.He;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.http.Header;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;
 import io.restassured.specification.RequestSpecification;
@@ -69,5 +71,15 @@ public class RestAssuredExtension {
         Request.pathParams(pathParams);
         Request.body(body);
         return Request.put(url);
+    }
+
+    public static ResponseOptions<Response> GetOpsWithToken(String url, String token) {
+        try {
+            Request.header(new Header("Authorization", "Bearer " + token));
+            return Request.get(new URI(url));
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
