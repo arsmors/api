@@ -107,10 +107,30 @@ public class GetPostSteps {
       response = RestAssuredExtension.GetWithPathParams(url, pathParams);
     }
 
-    @Then("^I should not see the body with title as \"([^\"]*)\"$")
-    public void iShouldNotSeeTheBodyWithTitleAs(String title) throws Throwable {
-       assertThat(response.getBody().jsonPath().get("title"), IsNot.not(title));
+    @Then("^I \"([^\"]*)\" see the body with title as \"([^\"]*)\"$")
+    public void iShouldNotSeeTheBodyWithTitleAs(String condition, String title) throws Throwable {
+        if(condition.equalsIgnoreCase("should not")) {
+            assertThat(response.getBody().jsonPath().get("title"), IsNot.not(title));
+        } else {
+            assertThat(response.getBody().jsonPath().get("title"), is(title));
+        }
     }
+
+    @And("^I Perform PUT operation for \"([^\"]*)\"$")
+    public void iPerformPUTOperationFor(String url, DataTable table) throws Throwable {
+        var data = table.raw();
+
+        Map<String, String> body = new HashMap<>();
+        body.put("id", data.get(1).get(0));
+        body.put("title", data.get(1).get(1));
+        body.put("author", data.get(1).get(2));
+
+        Map<String, String> pathParams = new HashMap<>();
+        pathParams.put("postid", data.get(1).get(0));
+
+        RestAssuredExtension.PutOpsWithBodyAndPathParams(url, body, pathParams);
+    }
+
 
 //    @Given("^I perform authentication operation for \"([^\"]*)\" with body$")
 ////    public void iPerformAuthenticationOperationForWithBody(String url, DataTable table) throws Throwable {
