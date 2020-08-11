@@ -5,6 +5,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;
@@ -16,6 +17,8 @@ import pojo.Location;
 import pojo.Posts;
 import utilities.RestAssuredExtension;
 
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
+import  static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import javax.xml.crypto.Data;
 
 import static org.hamcrest.CoreMatchers.*;
@@ -180,12 +183,11 @@ public class GetPostSteps {
         assertThat(address.getStreet(), equalTo(streetName));
     }
 
-
-//    @Given("^I perform authentication operation for \"([^\"]*)\" with body$")
-////    public void iPerformAuthenticationOperationForWithBody(String url, DataTable table) throws Throwable {
-////        Object data = table.raw();
-////
-////        HashMap<String, String> body = new HashMap<String, String>();
-//////        body.put("email", data.get(1).get(0));
-////    }
+    @Then("^I should see the author name as \"([^\"]*)\" with json validation$")
+    public void iShouldSeeTheAuthorNameAsWithJsonValidation(String arg0) throws Throwable {
+        var responseBody = response.getBody().asString();
+        assertThat(responseBody, matchesJsonSchemaInClasspath("post.json"));
+//        Assert.assertEquals(responseBody, matchesJsonSchemaInClasspath("post.json"));
+//        when().get(responseBody).then().assertThat().body(matchesJsonSchemaInClasspath("post.json"));
+    }
 }

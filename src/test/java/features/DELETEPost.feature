@@ -14,4 +14,4 @@ Feature: A description
     And I perform GET operation with path parameter for "http://localhost:3000/posts/{postid}"
       | postid |
       | 8      |
-    Then I should not see the body with title as "API Testing course"
+    Then I "should not" see the body with title as "API Testing course"
