@@ -15,7 +15,9 @@ import org.junit.Assert;
 import pojo.Address;
 import pojo.Location;
 import pojo.Posts;
+import utilities.APIConstant;
 import utilities.RestAssuredExtension;
+import utilities.RestAssuredExtension2;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import  static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -34,6 +36,7 @@ import static io.restassured.RestAssured.when;
 public class GetPostSteps {
 
     private static ResponseOptions<Response> response;
+    public static String token;
 
 //    @Given("^I perform GET operation for \"([^\"]*)\"$")
 //    public void iPerformGETOperationFor(String url) throws Throwable {
@@ -42,7 +45,7 @@ public class GetPostSteps {
 
     @Given("^I perform GET operation for \"([^\"]*)\"$")
     public void iPerformGETOperationFor(String url) throws Throwable {
-        response = RestAssuredExtension.GetOpsWithToken(url, response.getBody().jsonPath().get("access_token"));
+        response = RestAssuredExtension.GetOpsWithToken(url, token);
 
     }
 
@@ -147,25 +150,31 @@ public class GetPostSteps {
     }
 
     @Given("^I perform authentication operation for \"([^\"]*)\" with body$")
-    public void iPerformAuthenticationOperationForWithBody(String url, DataTable table) throws Throwable {
+    public void iPerformAuthenticationOperationForWithBody(String uri, DataTable table) throws Throwable {
         var data = table.raw();
 
         HashMap<String, String> body = new HashMap<>();
         body.put("email", data.get(1).get(0));
         body.put("password", data.get(1).get(1));
-        response = RestAssuredExtension.PostOpsWithBody(url, body);
+
+        RestAssuredExtension2 restAssuredExtension2 = new RestAssuredExtension2(uri, APIConstant.ApiMethods.POST, null);
+        token = restAssuredExtension2.Authenticate(body);
+//        response = RestAssuredExtension.PostOpsWithBody(url, body);
     }
 
     @And("^I perform GET operation with path parameter for address \"([^\"]*)\"$")
-    public void iPerformGETOperationWithPathParameterForAddress(String url, DataTable table) throws Throwable {
+    public void iPerformGETOperationWithPathParameterForAddress(String uri, DataTable table) throws Throwable {
        var data = table.raw();
        Map<String, String> queryParams = new HashMap<>();
        queryParams.put("id", data.get(1).get(0));
 
-       response = RestAssuredExtension.GetWithQueryParamsWithToken(
-               url,
-               queryParams,
-               response.getBody().jsonPath().get("access_token"));
+//       response = RestAssuredExtension.GetWithQueryParamsWithToken(
+//               url,
+//               queryParams,
+//               response.getBody().jsonPath().get("access_token"));
+
+        RestAssuredExtension2 restAssuredExtension2 = new RestAssuredExtension2(uri, "GET", token);
+        response = restAssuredExtension2.ExecuteAPIWithQueryParams(queryParams);
 
     }
 

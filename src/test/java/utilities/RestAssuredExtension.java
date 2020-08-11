@@ -20,28 +20,10 @@ public class RestAssuredExtension {
 
     public RestAssuredExtension() {
         RequestSpecBuilder builder = new RequestSpecBuilder();
-        builder.setBaseUri("http://locahost:3000");
+        builder.setBaseUri("http://locahost:3000/");
         builder.setContentType(ContentType.JSON);
         var requestSpec = builder.build();
         Request = RestAssured.given().spec(requestSpec);
-    }
-
-    public static void GetOpsWithPathParameter(String url, Map<String, String> pathParams) {
-        Request.pathParams(pathParams);
-        try {
-            Request.get(new URI(url));
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static ResponseOptions<Response> GetOps(String url) {
-        try {
-            return Request.get(new URI(url));
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-        return null;
     }
 
     public static ResponseOptions<Response> PostOpsWithBodyAndPathParams(
