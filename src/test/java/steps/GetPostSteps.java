@@ -16,6 +16,7 @@ import pojo.Address;
 import pojo.Location;
 import pojo.Posts;
 import utilities.APIConstant;
+import utilities.LoginBody;
 import utilities.RestAssuredExtension;
 import utilities.RestAssuredExtension2;
 
@@ -153,12 +154,16 @@ public class GetPostSteps {
     public void iPerformAuthenticationOperationForWithBody(String uri, DataTable table) throws Throwable {
         var data = table.raw();
 
-        HashMap<String, String> body = new HashMap<>();
-        body.put("email", data.get(1).get(0));
-        body.put("password", data.get(1).get(1));
+//        HashMap<String, String> body = new HashMap<>();
+//        body.put("email", data.get(1).get(0));
+//        body.put("password", data.get(1).get(1));
+
+        LoginBody loginBody = new LoginBody();
+        loginBody.setEmail(data.get(1).get(0));
+        loginBody.setPassword(data.get(1).get(1));
 
         RestAssuredExtension2 restAssuredExtension2 = new RestAssuredExtension2(uri, APIConstant.ApiMethods.POST, null);
-        token = restAssuredExtension2.Authenticate(body);
+        token = restAssuredExtension2.Authenticate(loginBody);
 //        response = RestAssuredExtension.PostOpsWithBody(url, body);
     }
 

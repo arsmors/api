@@ -11,16 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2ad33c5-4976-48ff-9b5a-e5dfd5818880" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/APIConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/LoginBody.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/Auth.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Auth.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/ComplexDataGET.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/ComplexDataGET.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/GetPostFeature.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/GetPostFeature.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/GetPostSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/GetPostSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/RestAssuredExtension.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/RestAssuredExtension.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/RestAssuredExtension2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/RestAssuredExtension2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,10 +203,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1597067943625">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1597145182441">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597067943625" />
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597145182441" />
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597126157009">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -223,30 +219,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="396" y="44" width="781" height="593" key="#xdebugger.evaluate/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597136769775" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1597133842571">
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1597145075387">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597133842571" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597145075387" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1596804001425">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596804001425" />
-    <state width="1237" height="195" key="GridCell.Tab.0.bottom" timestamp="1597137012306">
+    <state width="1237" height="232" key="GridCell.Tab.0.bottom" timestamp="1597145362484">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="195" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597137012306" />
-    <state width="1237" height="195" key="GridCell.Tab.0.center" timestamp="1597137012306">
+    <state width="1237" height="232" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597145362484" />
+    <state width="1237" height="232" key="GridCell.Tab.0.center" timestamp="1597145362484">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="195" key="GridCell.Tab.0.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597137012306" />
-    <state width="1237" height="195" key="GridCell.Tab.0.left" timestamp="1597137012305">
+    <state width="1237" height="232" key="GridCell.Tab.0.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597145362484" />
+    <state width="1237" height="232" key="GridCell.Tab.0.left" timestamp="1597145362484">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="195" key="GridCell.Tab.0.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597137012305" />
-    <state width="1237" height="195" key="GridCell.Tab.0.right" timestamp="1597137012306">
+    <state width="1237" height="232" key="GridCell.Tab.0.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597145362484" />
+    <state width="1237" height="232" key="GridCell.Tab.0.right" timestamp="1597145362484">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="195" key="GridCell.Tab.0.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597137012306" />
+    <state width="1237" height="232" key="GridCell.Tab.0.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597145362484" />
     <state width="1237" height="195" key="GridCell.Tab.1.bottom" timestamp="1597137012306">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -293,7 +289,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>80</line>
+          <line>81</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -303,12 +299,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>92</line>
+          <line>93</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>119</line>
+          <line>120</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -318,22 +314,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>56</line>
+          <line>57</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>166</line>
+          <line>171</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>178</line>
+          <line>183</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>197</line>
+          <line>202</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -348,7 +344,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>162</line>
+          <line>167</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -358,12 +354,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>47</line>
+          <line>48</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>128</line>
+          <line>129</line>
           <properties class="steps.GetPostSteps" method="iShouldNotSeeTheBodyWithTitleAs">
             <option name="EMULATED" value="true" />
           </properties>
