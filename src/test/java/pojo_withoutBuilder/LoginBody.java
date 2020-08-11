@@ -1,4 +1,4 @@
-package utilities;
+package pojo_withoutBuilder;
 
 public class LoginBody {
 

@@ -1,38 +1,30 @@
 package steps;
 
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;
-import org.hamcrest.Matcher;
 import org.hamcrest.core.IsNot;
-import org.junit.Assert;
 import pojo.Address;
 import pojo.Location;
 import pojo.Posts;
 import utilities.APIConstant;
-import utilities.LoginBody;
+import pojo.LoginBody;
 import utilities.RestAssuredExtension;
 import utilities.RestAssuredExtension2;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import  static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import javax.xml.crypto.Data;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.when;
 
 public class GetPostSteps {
 
@@ -52,6 +44,7 @@ public class GetPostSteps {
 
     @Then("^I should see the author name as \"([^\"]*)\"$")
     public void iShouldSeeTheAuthorNameAs(String authorName) throws Throwable {
+
         var posts = response.getBody().as(Posts.class);
         assertThat(posts.getAuthor(), equalTo(authorName));
 

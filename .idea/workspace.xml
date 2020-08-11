@@ -11,12 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2ad33c5-4976-48ff-9b5a-e5dfd5818880" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/LoginBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pojo_withoutBuilder/LoginBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pojo/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojo/Posts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/LoginBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojo/LoginBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/Posts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pojo/Posts.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/GetPostSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/GetPostSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/RestAssuredExtension2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/RestAssuredExtension2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +53,23 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arsens.morins\demo\api" />
+      <recent name="C:\Users\797505\IdeaProjects\api2\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pojo_withoutBuilder" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\arsens.morins\demo\api\src\test\resources" />
       <recent name="C:\Users\arsens.morins\demo\api\target\classes\utilities" />
       <recent name="C:\Users\797505\IdeaProjects\api2" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arsens.morins\demo\api" />
-      <recent name="C:\Users\797505\IdeaProjects\api2\main" />
-    </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Verify GET operation with bearer authentication token">
+  <component name="RunManager" selected="Cucumber Java.Feature: ComplexDataGET">
     <configuration name="Feature: Auth" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/Auth.feature" />
@@ -163,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: ComplexDataGET" />
         <item itemvalue="Cucumber Java.Scenario: Verify GET operation with bearer authentication token" />
+        <item itemvalue="Cucumber Java.Feature: Auth" />
         <item itemvalue="Cucumber Java.Scenario: Verify Get operation for complex data" />
         <item itemvalue="Cucumber Java.Scenario: Verify GET operation with bearer authentication token for json schema validation" />
-        <item itemvalue="Cucumber Java.Feature: ComplexDataGET" />
-        <item itemvalue="Cucumber Java.Feature: Auth" />
       </list>
     </recent_temporary>
   </component>
@@ -203,10 +210,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1597145182441">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1597146109149">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597145182441" />
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597146109149" />
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597126157009">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -227,50 +234,50 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1596804001425" />
-    <state width="1237" height="232" key="GridCell.Tab.0.bottom" timestamp="1597145362484">
+    <state width="1237" height="232" key="GridCell.Tab.0.bottom" timestamp="1597146807793">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="232" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597145362484" />
-    <state width="1237" height="232" key="GridCell.Tab.0.center" timestamp="1597145362484">
+    <state width="1237" height="232" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597146807793" />
+    <state width="1237" height="232" key="GridCell.Tab.0.center" timestamp="1597146807793">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="232" key="GridCell.Tab.0.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597145362484" />
-    <state width="1237" height="232" key="GridCell.Tab.0.left" timestamp="1597145362484">
+    <state width="1237" height="232" key="GridCell.Tab.0.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597146807793" />
+    <state width="1237" height="232" key="GridCell.Tab.0.left" timestamp="1597146807793">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="232" key="GridCell.Tab.0.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597145362484" />
-    <state width="1237" height="232" key="GridCell.Tab.0.right" timestamp="1597145362484">
+    <state width="1237" height="232" key="GridCell.Tab.0.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597146807793" />
+    <state width="1237" height="232" key="GridCell.Tab.0.right" timestamp="1597146807793">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="232" key="GridCell.Tab.0.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597145362484" />
-    <state width="1237" height="195" key="GridCell.Tab.1.bottom" timestamp="1597137012306">
+    <state width="1237" height="232" key="GridCell.Tab.0.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597146807793" />
+    <state width="1237" height="195" key="GridCell.Tab.1.bottom" timestamp="1597146541789">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="195" key="GridCell.Tab.1.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597137012306" />
-    <state width="1237" height="195" key="GridCell.Tab.1.center" timestamp="1597137012306">
+    <state width="1237" height="195" key="GridCell.Tab.1.bottom/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597146541789" />
+    <state width="1237" height="195" key="GridCell.Tab.1.center" timestamp="1597146541789">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="195" key="GridCell.Tab.1.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597137012306" />
-    <state width="1237" height="195" key="GridCell.Tab.1.left" timestamp="1597137012306">
+    <state width="1237" height="195" key="GridCell.Tab.1.center/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597146541789" />
+    <state width="1237" height="195" key="GridCell.Tab.1.left" timestamp="1597146541789">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="195" key="GridCell.Tab.1.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597137012306" />
-    <state width="1237" height="195" key="GridCell.Tab.1.right" timestamp="1597137012306">
+    <state width="1237" height="195" key="GridCell.Tab.1.left/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597146541789" />
+    <state width="1237" height="195" key="GridCell.Tab.1.right" timestamp="1597146541789">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="195" key="GridCell.Tab.1.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597137012306" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1597126328162">
+    <state width="1237" height="195" key="GridCell.Tab.1.right/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597146541789" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1597146869056">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597126328162" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597146869056" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1597130276868">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597130276868" />
-    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597133535141">
+    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597146213682">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597133535141" />
+    <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680/0.-1080.1920.1040@0.0.1280.680" timestamp="1597146213682" />
     <state x="371" y="91" key="extract.method.dialog" timestamp="1596810747789">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -289,7 +296,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>81</line>
+          <line>75</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -299,12 +306,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>93</line>
+          <line>87</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>120</line>
+          <line>114</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -314,52 +321,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>57</line>
+          <line>51</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>171</line>
+          <line>165</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>183</line>
+          <line>177</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>202</line>
+          <line>196</line>
           <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension2.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension2.java</url>
           <line>60</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>167</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/utilities/RestAssuredExtension.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/steps/GetPostSteps.java</url>
-          <line>129</line>
+          <line>123</line>
           <properties class="steps.GetPostSteps" method="iShouldNotSeeTheBodyWithTitleAs">
             <option name="EMULATED" value="true" />
           </properties>
@@ -369,9 +356,9 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CucumberJavaRunConfigurationType">
-        <watch expression="matchesJsonSchemaInClasspath(&quot;post.json&quot;)" />
-        <watch expression="when().get(responseBody).then().assertThat().body(matchesJsonSchemaInClasspath(&quot;post.json&quot;));" />
-        <watch expression="restAssuredExtension" />
+        <watch expression="post.getAuthor()" />
+        <watch expression="authorName" />
+        <watch expression="new Posts.Builder().build()" />
       </configuration>
     </watches-manager>
   </component>
